@@ -1,0 +1,75 @@
+<html>
+   <head>
+   <link rel="stylesheet" type="text/css" href="staffreg.css">
+<script src="reg.js"></script>
+    </head>
+  <body>
+<div class="container">
+		<div class="tabs">
+			<ul>
+				<li id="home"><a href="index.html">Home</a></li>
+				<li id="home"><a href="so.html">entry</a></li>
+				<li id="reset"><a>Reset</a></li>
+			</ul>
+		</div>
+		<div class="forms">
+			<div class="register">
+				<p>Sign up if you are a new user.</p>
+				
+				 <form action="staffreg.php" method="post"  onSubmit="return valid(this)">					 
+					<input class="field" name="id" required type="text" placeholder="STAFF ID" /> 
+					<input class="field" name="name" required type="text" placeholder="NAME" />
+					<tr>
+	<td>Gender&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="radio" name="gender" value="male">Male
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="gender" value="female">Female
+   </td>
+	<br/><br/><br/>
+<td class="regf1">DEPAERTMENT</td><td class="regf1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         	 	
+<select name="department" style="margin-bottom:30px;">
+<option value="Select Year">Select Branch</option>
+<option value="first year">INFORMATION TECHNOLOGY</option>
+<option value="second year">MECHICAL ENGINEERING</option>
+<option value="third year">ELECTRICAL ENGINEERING</option>
+</select></td>
+</tr>
+
+<div class="a"><br></div>
+	<input class="field" name="contactno" required type="text" placeholder="CONTACT NUMBER" />
+ 
+ <div class="a"><br></div>
+					<input class="field" name="email" required type="email" placeholder="email(xyz@recbanda.com") />
+					
+				<div class="a"><br></div>
+					<input class="field" name="paddress" required type="text" placeholder="PERMANENT ADDRESS" />
+				    <input class="field" name="barcode" required type="text" placeholder="BARCODE" />
+					<input type="submit" onclick="checkpass()" value="Sign Up" />
+				</form>
+			</div>
+			
+			<div class="login">
+				<p>SignIn in your account.</p>
+				
+				<form method="post" name="register" action="login.jsp">
+					<input class="field" name="email" required type="email" placeholder="* myusername@domain.com" />
+					<input class="field" name="pass" required type="password" name="pass" placeholder="* Password" />
+					<input type="checkbox" name="terms"> <em>Keep me logged in </em> <input type="submit" value="Login" />
+				</form>
+			</div>
+			
+			<div class="reset">
+				<p>Reset Your Password.</p>
+				
+				<form method="post" name="register" action="reset.jsp">			 
+					<input class="field" name="email" type="email" placeholder="*myusername@domain.com" required />
+					<input class="field" name="pass_old" type="password" placeholder="*Old Password" required/>
+					<input class="field" name="pass_new" type="password" placeholder="*New Password" required/>
+					<div class="btn">
+						<input type="submit" value="Get New One !" />
+							</div>
+						</form>
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

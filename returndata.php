@@ -1,0 +1,40 @@
+<html>
+   <head>
+   <link rel="stylesheet" type="text/css" href="reg.css">
+<script src="reg.js"></script>
+    </head>
+  <body>
+<div class="container">
+		<div class="tabs">
+			<ul>
+				<li id="home"><a href="index.html">Home</a></li>
+			</ul>
+		</div>
+		 <form action="sda.php" method="post"  onSubmit="return valid(this)">	
+		
+			<input class="field" name="barcode" type="password" placeholder="SCAN BARCODE FOR ENTRY" required/>
+			<br/>
+					<br/>
+			<input type="submit" onclick="checkpass()" value="Submit" />
+						</form>
+						<br/>
+						<br/>
+						 <form action="entry.php" method="post"  onSubmit="return valid(this)">	
+						 <br/>
+						 <br/>
+						 <br/>
+						 <br/>
+						 <br/>
+						 <br/>
+						 <br/>
+						 <br/>
+						 <br/>
+						 <br/>
+						 <br/>
+						 <br/>
+						 </form>
+			</div>
+		</div>
+	</div>
+  </body>
+</html>

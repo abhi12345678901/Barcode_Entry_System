@@ -1,0 +1,118 @@
+<html>
+   <head>
+   <meta charset="utf-8">
+<link rel="favicon" href="assets/images/favicon.png">
+	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css"> 
+	<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen"> 
+	<link rel="stylesheet" href="assets/css/style.css">
+    <link rel='stylesheet' id='camera-css'  href='assets/css/camera.css' type='text/css' media='all'> 
+   <link rel="stylesheet" type="text/css" href="reg.css">
+<script src="reg.js"></script>
+    </head>
+  <body>
+  <div id="header">
+  <img src="logo.png" alt="REC LOGO" height="130" width="130" align="left" >
+  <center><p class="head2" style="color:white;">jktdh; bathfu;fjax dkWyst] ckaWnk  </p></center>
+<center><p STYLE="color:white; font-size:25px;">&nbsp;&nbsp;&nbsp;&nbsp;Rajkiya Engineering College, Banda <br/>
+<p style="color:white;font-size:15px; margin-left:100px;">Atarra,Banda-210201</p></p></center>
+<p style="color:white; margin-left:450px;">E-Mail:director@recbanda.ac.in &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;URL:www.recbanda.ac.in</p>
+<p style="color:white; margin-left:450px;">Tel:+91 5191 254301 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Mob:+91 7905607177</p>
+  </div>
+<div class="container">
+		<div class="tabs">
+			<ul>
+				<li id="home"><a href="index.html">Home</a></li>
+				<li id="home"><a href="sda.php">entry</a></li>
+				<li id="reset"><a>Reset</a></li>
+			</ul>
+		</div>
+		<div class="forms">
+			<div class="register">
+				<p>Sign up if you are a new user.</p>
+				
+				 <form action="itreg.php" method="post"  onSubmit="return valid(this)">					 
+					<input class="field" name="rollno" required type="text" placeholder="Roll Number" /> 
+					<input class="field" name="name" required type="text" placeholder="Name" />
+					<input class="field" name="fname" required type="text" placeholder="FATHER NAME" />
+					<tr>
+	<td>Gender&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="radio" name="gender" value="Male">Male
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="gender" value="Female">Female
+   </td>
+	<br/><br/><br/>
+<td class="regf1">BRANCH</td><td class="regf1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          	 	
+<select name="branch" style="margin-bottom:30px;">
+<option value="Select Year">Select Branch</option>
+<option value="Information Technology">INFORMATION TECHNOLOGY</option>
+<option value="Mechanical Engineering">MECHICAL ENGINEERING</option>
+<option value="Electrical Engineering">ELECTRICAL ENGINEERING</option>
+</select></td>
+</tr>
+<td class="regf1">Year</td><td class="regf1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          	 	
+<select name="year">
+<option value="Select Year">Select Year</option>
+<option value="First Year">First Year</option>
+<option value="Second Year">Second Year</option>
+<option value="Third Year">Third Year</option>
+<option value="Final Year">Final Year</option>
+</select></td>
+</tr>
+<div class="a"><br></div>
+	<input class="field" name="contactno" required type="text" placeholder="CONTACT NUMBER" />
+ 
+ <div class="a"><br></div>
+					
+				
+					<input class="field" name="fcontactno" required type="text" placeholder="FATHER CONTACT NUMBER" />
+					<input class="field" name="email" required type="email" placeholder="email(xyz@recbanda.com") />
+<tr>
+ 
+<td class="regf1">HOSTAL NAME</td><td class="regf1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          	 	
+<select name="hostalname">
+<option value="Select Year">Select name</option>
+<option value="first year">ARYABHATT</option>
+<option value="second year">RAMANUJAN</option>
+<option value="third year">C V RAMAN</option>
+</select></td>
+</tr>	
+				<div class="a"><br></div>
+					<input class="field" name="roomno" required type="text" placeholder="ROOM NUMBER" />
+					<input class="field" name="paddress" required type="text" placeholder="PERMANENT ADDRESS" />
+				    <input class="field" name="barcode" required type="text" placeholder="BARCODE" />
+					<input type="submit" onclick="checkpass()" value="Sign Up" />
+				</form>
+			</div>
+			
+			<div class="login">
+				<p>SignIn in your account.</p>
+				
+				<form method="post" name="register" action="login.jsp">
+					<input class="field" name="email" required type="email" placeholder="* myusername@domain.com" />
+					<input class="field" name="pass" required type="password" name="pass" placeholder="* Password" />
+					<input type="checkbox" name="terms"> <em>Keep me logged in </em> <input type="submit" value="Login" />
+				</form>
+			</div>
+			
+			<div class="reset">
+				<p>Reset Your Password.</p>
+				
+				<form method="post" name="register" action="reset.jsp">			 
+					<input class="field" name="email" type="email" placeholder="*myusername@domain.com" required />
+					<input class="field" name="pass_old" type="password" placeholder="*Old Password" required/>
+					<input class="field" name="pass_new" type="password" placeholder="*New Password" required/>
+					<div class="btn">
+						<input type="submit" value="Get New One !" />
+							</div>
+						</form>
+			</div>
+		</div>
+	</div>
+  </body>
+</html>
